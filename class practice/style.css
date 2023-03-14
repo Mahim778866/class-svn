@@ -1,0 +1,61 @@
+*{
+   /* padding: 0;*/
+   /* margin: 0; */
+    outline: 0;
+    box-sizing: border-box;
+}
+nav{
+   
+    background: orange;
+   
+}
+nav .mini{
+    width: 1140px;
+   align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+}
+
+
+nav .mini ul{
+    list-style-type: none;
+    display: flex;
+}
+nav .mini ul li {
+    position: relative;
+}
+nav .mini ul li a{
+    display: inline-block;
+    color: black;
+    font-size: 16px;
+    padding: 25px 20px;
+    text-decoration: none;
+ 
+    transition-duration: 0.8s;
+}
+nav .mini ul li a:hover{
+    background: black;
+    color: orange;
+}
+
+nav .mini ul li ul{
+    right:0;
+    top: 200% ;
+    position: absolute;
+    display: initial;
+    width: 250px;
+    background: gainsboro;
+    border: 1px solid red;
+    border-radius: 10 px;
+   opacity:  0 ;
+   visibility: hidden;
+   transition: 0.8s;
+   transform: rotate(50deg);
+}
+nav .mini ul li:hover ul {
+    top: 100%;
+    transform: rotate(0deg);
+    opacity: 1;
+    visibility: visible;
+}
